@@ -1,0 +1,449 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* top bar styling start */
+.top_bar {
+  background-color: black;
+  color: aliceblue;
+  padding: 9px 0px;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+.top_bar .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top_bar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.top_bar {
+  font-size: 13px;
+}
+@media screen and (max-width:582px){
+    .top_bar {
+        display:none;
+      }
+    
+    
+}
+
+/* top bar styling ends */
+/* header section styling starts */
+.header_section {
+  padding: 10px 0px;
+  background-color: rgb(70, 196, 227);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  color: black;
+}
+
+.header_section .logo h2 {
+  font-variant: small-caps;
+  font-style: italic;
+  font-size: 35px;
+}
+
+.header_section .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_section ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.header_section ul li {
+  padding: 5px 10px;
+  text-transform: uppercase;
+}
+
+.header_section ul li:hover {
+  background-color: rgb(109, 133, 133);
+  /* for border in pointer */
+  /* border-bottom: 1px solid gray; */
+  cursor: pointer;
+}
+/* cources */
+.nav_link {
+  position: relative;
+}
+.header_section .dropdown {
+  background-color: rgb(96, 175, 190);
+  color: rgb(34, 33, 31);
+  display: none;
+  padding: 10px;
+  margin-left: -20px;
+  position: absolute;
+  width: 170px;
+  top: 29px;
+  z-index: 1000;
+}
+.header_section .dropdown {
+  font-size: 14px;
+}
+.nav_link:hover .dropdown {
+  display: block;
+}
+.menu_bar {
+  display: none;
+}
+.menu_bar i{
+  font-size: 25px;
+  cursor: pointer;
+}
+@media screen and (max-width:1064px) {
+  .container {
+    width: 95%;
+    
+  } 
+}
+@media screen and (max-width:952px) {
+  .nav_elements ul{
+    display: none;
+  }
+  .menu_bar{
+    display: block;
+  }
+  
+}
+@media screen and (max-width:581px) {
+  .header_section {
+    background-color: black;
+    color: aliceblue;
+  }
+  
+}
+/* .blog_link{
+  position: relative;
+} */
+
+/* cources ends */
+/* Blog starts */
+/* .nav_link{
+    position: relative;
+}
+.header_section .dropdown {
+    background-color: rgb(27, 183, 128);
+    color: blanchedalmond;
+    display: none;
+    padding: 10px;
+    margin-left: -20px;
+    position: absolute;
+    width: 170px;
+    top: 29px;
+    z-index: 1000;
+}
+.header_section .dropdown{
+    font-size: 14px;
+}
+.nav_link:hover .dropdown{
+    display: block;
+} */
+
+/* Blog ends */
+/* header section styling ends */
+/* hero section styling starts*/
+.hero_section {
+  background-color: rgb(7, 80, 97);
+  color: rgb(236, 221, 201);
+  position: relative;
+}
+.hero_section .overlay {
+  height: 600px;
+  width: 100%;
+  background: url("./images/Why_E-Learning_Insights_into_the_World_of_Online_Learning_and_Development.avif")
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+}
+.hero_section_content {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  /* width: 50%; */
+}
+.hero_section_content p {
+  font-size: 18px;
+  font-style: italic;
+  padding: 20px 0;
+  color: aliceblue;
+}
+.hero_section_content button {
+  border: none;
+  background-color: rgb(154, 233, 235);
+  color: black;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+
+  
+
+
+/* hero section styling ends */
+/* course highlights styling starts */
+.course_highlights {
+  position: relative;
+  top: -38px;
+}
+.course_highlights .container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  row-gap: 40px;
+}
+.course_card {
+  width: 315px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  /* padding: 20px; */
+}
+.course_card h4 {
+  background-color: rgb(154, 233, 235);
+  color: black;
+  text-align: center;
+  padding: 10px 0px;
+}
+.course_card p {
+  padding: 15px;
+}
+.course_card button {
+  border: none;
+  margin: 5px 15px 15px 15px;
+  padding: 5px 10px;
+  background-color: rgb(154, 233, 235);
+  color: black;
+  cursor: pointer;
+}
+
+/* course highlights styling ends */
+
+/* popular_course styling starts */
+.popular_course {
+  /* padding: 20px; */
+  margin-top: -30px;
+}
+.popular_course .container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+.head {
+  text-align: center;
+  padding: 30px;
+}
+.head h2 {
+  font-size: 40px;
+  color: aqua;
+}
+.head h2::before {
+  content: "";
+  width: 50px;
+  height: 4px;
+  background-color: aqua;
+  display: block;
+  margin: 20px auto;
+}
+.popular_course .course_card img {
+  width: 100%;
+  height: 170px;
+}
+.popular_course .course_card h5 {
+  text-align: center;
+  font-size: 25px;
+  padding: 10px;
+}
+.popular_course .course_card p {
+  font-style: italic;
+  margin-top: -20px;
+}
+/* popular_course styling ends*/
+.author {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(145, 231, 219);
+}
+.author .author_image {
+  margin-top: 5px;
+}
+
+.author .author_image img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.author_name .name {
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: -20px;
+}
+
+.author_name .name span {
+  color: blue;
+}
+
+.price {
+  background-color: rgb(161, 205, 201);
+  color: rgb(36, 41, 40);
+  /* height: 50px; */
+  padding-top: 20px;
+}
+.price p {
+  font-size: 20px;
+  font-weight: 550;
+}
+/* mid section styling starts */
+.mid_section {
+  background-color: rgb(138, 217, 217);
+  color: aliceblue;
+  padding: 100px;
+  margin-top: 70px;
+}
+.mid_section .container {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.mid_section .button button {
+  border: none;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  font-size: 18px;
+  cursor: pointer;
+  border: 1px solid whitesmoke;
+}
+.mid_section .button button:hover {
+  background-color: transparent;
+  color: aliceblue;
+}
+/* mid section styling ends */
+/* testimonial section styling starts */
+.testimonial_section {
+  /* margin-top: 20px; */
+  text-align: center;
+  background: url(./images/Shutterstock_1765670687_Science_byPopTika.webp) no-repeat;
+  padding: 20px 0 30px 0;
+  background-size: cover;
+  color: rgb(10, 16, 17);
+  background-color: black;
+  background-position: center;
+  /* opacity: 0.3; */
+}
+.testimonial_section h2 {
+  color: aliceblue;
+}
+.testimonial_section h2::before {
+  background-color: aliceblue;
+}
+.testimonial_card .testi_image img {
+  height: 120px;
+  widows: 120px;
+  border-radius: 50%;
+}
+.testimonial_card p {
+  font-size: 10px;
+  padding: 20px;
+  font-style: italic;
+}
+.testimonial_card p i {
+  font-size: 35px;
+}
+.name_and_position h4 {
+  font-size: 27px;
+  padding-top: 15px;
+}
+/* testimonial section styling ends*/
+/* footer section styling starts*/
+.footer_section .container {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  justify-content:space-between;
+  color: aliceblue;
+  width: 95%;
+}
+
+.footer_section{
+    background-color: rgb(6, 90, 111);
+  padding: 20px 0;
+}
+.footer_link h4{
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+.footer_section ul{
+    list-style: none;
+}
+.footer_section ul li{
+    padding: 3px 0;
+}
+.footer_section .social_icons ul{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+    justify-content: space-between;
+}
+.footer_section .social_icons li{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    padding: 0;
+    background-color: aliceblue;
+    color: black;
+}
+.footer_section .social_icons li i{
+    margin-top: 10px;
+    font-size: 14px;
+}
+.footer_section p{
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+    border-top:1px solid white;
+    padding-top: 40px;
+    color: white;
+}
+/* footer section styling ends*/
+ @media screen and (max-width:979px) {
+  .hero_section .overlay{
+    height: 500px;
+  }
+  .hero_section_content{
+    top: 25%;
+    left: 5%;
+  }
+  .hero_section h1{
+    font-size: 25px;
+  }
+  .hero_section_content p{
+    font-size: 15px;
+  }
+  
+} 
+/* @media screen and (max-width:1044px){
+  
+} */
